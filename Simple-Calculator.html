@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style type="text/css">
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial;
+		}
+		h1 {
+			text-align: center;
+			color: #666666;
+		}
+		form {
+			margin-top: 50px;
+			text-align: center;
+		}
+		input[type=text] {
+			padding: 10px;
+			border-radius: 5px;
+			border: yes;
+			width: 250px;
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+		input[type=button] {
+			padding: 15px 20px 30px;
+			border-radius: 5px 10px 20px;
+			border: yes;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 20px 30px;
+			cursor: pointer;
+		}
+		input[type=button]:hover {
+			background-color: #3e8e41;
+			padding: 10px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+<h1>Simple Calculator</h1>
+<form name="calculator">
+<input type="text" name="display" id="display" disabled><br>
+
+<input type="button" value="1" onclick="calculator.display.value += '1'">
+<input type="button" value="2" onclick="calculator.display.value += '2'">
+<input type="button" value="3" onclick="calculator.display.value += '3'"><br>
+
+<input type="button" value="4" onclick="calculator.display.value += '4'">
+<input type="button" value="5" onclick="calculator.display.value += '5'">
+<input type="button" value="6" onclick="calculator.display.value += '6'"><br>
+
+<input type="button" value="7" onclick="calculator.display.value += '7'">
+<input type="button" value="8" onclick="calculator.display.value += '8'">
+<input type="button" value="9" onclick="calculator.display.value += '9'"><br>
+
+<input type="button" value="+" onclick="calculator.display.value += '+'">
+<input type="button" value="-" onclick="calculator.display.value += '-'">
+<input type="button" value="/" onclick="calculator.display.value += '/'"><br>
+
+<input type="button" value=". " onclick="calculator.display.value += '.'">
+<input type= "button"value= "0 "onclick= "calculator.display.value+= '0' ">
+<input type= "button"value= "*"onclick= "calculator.display.value+= '*' "><br>
+
+<input type="reset" value="<-- Backspace">
+<input type="button" value=". " onclick=".">
+<input type= "button"value= "="onclick= "calculator.display.value= eval(calculator.display.value) ">
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
